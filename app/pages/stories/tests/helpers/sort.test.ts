@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { type Story } from "../../models/Story";
+import { type Story } from "../../../../common/models/Story";
 import { sort } from "../../helpers/sort";
 
 const stories: Story[] = [

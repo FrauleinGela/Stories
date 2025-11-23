@@ -1,5 +1,5 @@
 import { ref } from "vue";
-import type { Story } from "../models/Story";
+import type { Story } from "../../../common/models/Story";
 import { api } from "~/core/api/api";
 import type { APIStory, APIUser } from "~/core/api/hackerNews/models/models";
 

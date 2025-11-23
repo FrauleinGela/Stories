@@ -1,5 +1,5 @@
 import { api } from "~/core/api/api";
-import type { Story } from "../models/Story";
+import type { Story } from "../../../common/models/Story";
 import type { APIStory, APIUser } from "~/core/api/hackerNews/models/models";
 
 export const useFetchStoryWithUser = (storyId: Ref<number>) => {

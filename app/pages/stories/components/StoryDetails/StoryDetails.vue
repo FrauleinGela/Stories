@@ -1,6 +1,6 @@
 <script lang='ts' setup>
 import { toLocalDateTime } from '~/lib/formatter';
-import type { Story } from '../../models/Story';
+import type { Story } from '../../../../common/models/Story';
 const props = defineProps<{
   story: Story,
 }>();

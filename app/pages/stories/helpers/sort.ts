@@ -1,4 +1,4 @@
-import type { Story } from "../models/Story";
+import type { Story } from "../../../common/models/Story";
 
 export type StoriesSortBy = 'score' | 'authorKarma';
 
