@@ -22,7 +22,6 @@ const sortedAllStories = computed(() => sort(allStories.value, sortBy.value));
       <p>Error loading stories: {{ error.message }}</p>
     </template>
     <template v-else>
-      {{ sortBy }}
       <div class="flex-col">
         <div class="flex justify-end filter-group">
           <label for="sort-select" class="visually-hidden">Sort stories by</label>
