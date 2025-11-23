@@ -1,0 +1,43 @@
+// variables
+$width-sm: 600px;
+$width-md: 900px;
+$width-lg: 1200px;
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  > article {
+    flex: 0 0 calc(100% - 1rem);
+    max-width: calc(100% - 1rem);
+  }
+}
+
+@media (min-width: $width-sm) {
+  .grid > .col-sm {
+    flex: 0 0 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+}
+
+@media (min-width: $width-md) {
+  .grid > .col-md {
+    flex: 0 0 calc(33.333% - 1rem);
+    max-width: calc(33.333% - 1rem);
+  }
+}
+
+@media (min-width: $width-lg) {
+  .grid > .col-lg {
+    flex: 0 0 calc(25% - 1rem);
+    max-width: calc(25% - 1rem);
+  }
+}
+
+body {
+  font-family: 'Helvetica Neue';
+}
+
+a {
+  text-decoration: none;
+}
