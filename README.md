@@ -1,4 +1,5 @@
 # Hacker News Top Stories 
+Time: 4h + Readme docs
 ## Description
 Solution displays the top 10 Hacker News stories sorted in ascending order by their score. 
 <br>
