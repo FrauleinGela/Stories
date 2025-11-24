@@ -1,9 +1,10 @@
 import type { APIStory, APIUser } from "./models/models";
+import { fetch } from 'ofetch';
 
 export interface ApiHackerNews {
   getTopStories: () => Promise<number[]>,
-  getStory: (id: number) => Promise<any>,
-  getUser: (id: string) => Promise<any>,
+  getStory: (id: number) => Promise<APIStory>,
+  getUser: (id: string) => Promise<APIUser>,
 }
 
 const hackerNewsBaseUrl = 'https://hacker-news.firebaseio.com/v0';

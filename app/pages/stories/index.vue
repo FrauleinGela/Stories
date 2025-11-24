@@ -4,11 +4,10 @@ import { useFetchAlllStories } from './composables/useFetchAllStories';
 import { sort, type StoriesSortBy } from './helpers/sort';
 
 const top10Stories = 10;
-const { error, isLoading, allStories, fetch } = useFetchAlllStories(top10Stories);
+const { data: allStories, error, isLoading } = useFetchAlllStories(top10Stories);
 
-fetch();
 const sortBy = ref<StoriesSortBy>('score');
-const sortedAllStories = computed(() => sort(allStories.value, sortBy.value));
+const sortedAllStories = computed(() => sort(allStories.value ?? [], sortBy.value));
 
 </script>
 <template>
