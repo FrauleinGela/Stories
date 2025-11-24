@@ -1,9 +1,34 @@
-# Nuxt Minimal Starter
+# Hacker News Top Stories 
+## Description
+Solution displays the top 10 Hacker News stories sorted in ascending order by their score. 
+<br>
+The application is built with Nuxt v4 and structured using a modular approach, making the codebase organized.
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Features
+ - Display top 10 Hacker News stories
 
-## Setup
+ - Sort stories by score or author karma
 
+ - Display stories in a grid column layout
+
+ - Responsive grid design
+
+ - Modular folder structure to separate business features, utilities, and API
+
+
+## Folder Structure
+```
+|- lib/      # Utilities, all technicalities unrelated to business logic
+|- core/     # API, all endpoints related to Hacker News
+|- pages/    # Pages, with modular structure including:
+|------------- Tests
+|------------- Components
+|------------- Composables
+|------------- Helpers
+
+```   
+
+## Run Application
 Make sure to install dependencies:
 
 ```bash
@@ -37,39 +62,3 @@ yarn dev
 # bun
 bun run dev
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
